@@ -1,0 +1,13 @@
+<div class="display-gird">
+	<h1>Калькулятор</h1>
+	<input [(ngModel)]="firstOperand" type="number">
+	<select [(ngModel)]="operator">
+<option value="больше"> < </option>
+<option value="равно ">=</option>
+<option value="меньше"> > </option>
+</select>
+	<input [(ngModel)]="secondNumber "type="number">
+	<input (click)="doCalc()" type="submit" value="Подтвердить">
+	<p> {{result}}</p>
+	<p>{{cError}}</p>
+</div>
